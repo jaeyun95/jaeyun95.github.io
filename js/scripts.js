@@ -110,7 +110,7 @@ function displayDday() {
 
 // 카카오 맵 가져오기
 function getKakaoMap() {
-    Kakao.init('25881f7e8e3c4f3d2f7037c2ef4e2b93');
+    Kakao.init('6324846770cc3fff60e3982d062392ac');
 
     Kakao.Local.searchAddress('빌라드지디 청담', function(result, status) {
         if (status === kakao.maps.services.Status.OK) {
