@@ -108,10 +108,32 @@ function displayDday() {
     }
 }
 
+// 카카오 맵 가져오기
+function getKakaoMap() {
+    Kakao.init('25881f7e8e3c4f3d2f7037c2ef4e2b93');
+
+    Kakao.Local.searchAddress('빌라드지디 청담', function(result, status) {
+        if (status === kakao.maps.services.Status.OK) {
+            const coords = new kakao.maps.LatLng(result[0].y, result[0].x);
+            const container = document.getElementById('map');
+            const options = {
+                center: coords,
+                level: 3
+            };
+            const map = new kakao.maps.Map(container, options);
+            const marker = new kakao.maps.Marker({
+                position: coords,
+                map: map
+            });
+        }
+    });
+}
+
 // 페이지가 로드될 때 D-N Day 표시
 window.onload = function() {
     displayDday();
 
     // 매 초마다 갱신되도록 설정
     setInterval(displayDday, 1000);
+    getKakaoMap();
 };
