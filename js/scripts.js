@@ -130,7 +130,6 @@ function getKakaoMap() {
 }
 
 function getKakaoMap2() {
-    Kakao.init('6324846770cc3fff60e3982d062392ac');
     const mapContainer = document.getElementById('map');
     const mapOption = {
         center: new kakao.maps.LatLng(37.52052, 127.022581), // '빌라드지디 청담'의 위도, 경도
