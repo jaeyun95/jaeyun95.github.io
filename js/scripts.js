@@ -173,23 +173,14 @@ function getKakaoMap2() {
         yAnchor: 1 
     });*/
 
-    var markerPosition  = new kakao.maps.LatLng(37.52020441860761, 127.05544016257608); 
-
-    // 이미지 지도에 표시할 마커입니다
-    // 이미지 지도에 표시할 마커는 Object 형태입니다
-    var marker = {
-        position: markerPosition
+    var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+    mapOption = { 
+        center: new kakao.maps.LatLng(37.52020441860761, 127.05544016257608), // 지도의 중심좌표
+        level: 3 // 지도의 확대 레벨
     };
 
-    var staticMapContainer  = document.getElementById('staticMap'), // 이미지 지도를 표시할 div  
-        staticMapOption = { 
-            center: new kakao.maps.LatLng(37.52020441860761, 127.05544016257608), // 이미지 지도의 중심좌표
-            level: 3, // 이미지 지도의 확대 레벨
-            marker: marker // 이미지 지도에 표시할 마커 
-        };    
-
-    // 이미지 지도를 생성합니다
-    var staticMap = new kakao.maps.StaticMap(staticMapContainer, staticMapOption);
+    // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
+    var map = new kakao.maps.Map(mapContainer, mapOption); 
 
 
 }
