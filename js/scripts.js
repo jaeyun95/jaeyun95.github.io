@@ -129,11 +129,31 @@ function getKakaoMap() {
     });
 }
 
+function getKakaoMap2() {
+    const mapContainer = document.getElementById('map');
+    const mapOption = {
+        center: new kakao.maps.LatLng(37.52052, 127.022581), // '빌라드지디 청담'의 위도, 경도
+        level: 3 // 지도 확대 레벨
+    };
+
+    const map = new kakao.maps.Map(mapContainer, mapOption);
+    const markerPosition = new kakao.maps.LatLng(37.52052, 127.022581);
+
+    // 마커 표시
+    const marker = new kakao.maps.Marker({
+        position: markerPosition
+    });
+
+    // 마커 지도에 추가
+    marker.setMap(map);
+}
+
 // 페이지가 로드될 때 D-N Day 표시
 window.onload = function() {
     displayDday();
 
     // 매 초마다 갱신되도록 설정
     setInterval(displayDday, 1000);
-    getKakaoMap();
+    getKakaoMap2();
+    //getKakaoMap();
 };
