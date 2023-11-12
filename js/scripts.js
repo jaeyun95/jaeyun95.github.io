@@ -133,12 +133,12 @@ function getKakaoMap2() {
     
     const mapContainer = document.getElementById('map');
     const mapOption = {
-        center: new kakao.maps.LatLng(37.52052, 127.022581), // '빌라드지디 청담'의 위도, 경도
+        center: new kakao.maps.LatLng(37.52020441860761, 127.05544016257608), // '빌라드지디 청담'의 위도, 경도
         level: 3 // 지도 확대 레벨
     };
 
     const map = new kakao.maps.Map(mapContainer, mapOption);
-    const markerPosition = new kakao.maps.LatLng(37.52052, 127.022581);
+    const markerPosition = new kakao.maps.LatLng(37.52020441860761, 127.05544016257608);
 
     // 마커 표시
     const marker = new kakao.maps.Marker({
