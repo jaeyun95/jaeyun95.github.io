@@ -81,7 +81,7 @@ function fadeIn(el, display) {
 
 
 // D-Day 설정 (년, 월(0부터 시작), 일)
-const dDay = new Date('2023-12-31');
+const dDay = new Date('2024-03-01');
 
 // D-Day까지의 시간 계산하는 함수
 function calculateDday() {
@@ -102,9 +102,9 @@ function displayDday() {
     if (daysLeft === 0) {
         countdownElement.innerHTML = "D-Day";
     } else if (daysLeft > 0) {
-        countdownElement.innerHTML = `D-${daysLeft} Day`;
+        countdownElement.innerHTML = `D-${daysLeft}`;
     } else {
-        countdownElement.innerHTML = "D+${daysLeft} Day";
+        countdownElement.innerHTML = "D+${daysLeft}";
     }
 }
 
