@@ -110,6 +110,7 @@ function displayDday() {
 
 // 카카오 맵 가져오기
 function getKakaoMap() {
+    Kakao.init('6324846770cc3fff60e3982d062392ac');
 
     Kakao.Local.searchAddress('빌라드지디 청담', function(result, status) {
         if (status === kakao.maps.services.Status.OK) {
@@ -129,6 +130,7 @@ function getKakaoMap() {
 }
 
 function getKakaoMap2() {
+    
     const mapContainer = document.getElementById('map');
     const mapOption = {
         center: new kakao.maps.LatLng(37.52052, 127.022581), // '빌라드지디 청담'의 위도, 경도
@@ -153,6 +155,6 @@ window.onload = function() {
 
     // 매 초마다 갱신되도록 설정
     setInterval(displayDday, 1000);
-    getKakaoMap();
+    getKakaoMap2();
     //getKakaoMap();
 };
