@@ -191,8 +191,6 @@ window.onload = function() {
 
     // 매 초마다 갱신되도록 설정
     setInterval(displayDday, 1000);
-
-
     getKakaoMap2();
     //getKakaoMap();
 };
