@@ -11118,16 +11118,14 @@ footer.footer .social-link:hover {
 
 .custom-icon-call {
   display: inline-block;
-  width: 16px; /* 아이콘의 너비 설정 */
-  height: 16px; /* 아이콘의 높이 설정 */
+  width: 5px; /* 아이콘의 너비 설정 */
+  height: 5px; /* 아이콘의 높이 설정 */
   background-image: url('img/call.png'); /* PNG 아이콘의 경로 설정 */
-  background-size: cover; /* 배경 이미지를 아이콘에 맞게 조절 */
 }
 
 .custom-icon-money {
   display: inline-block;
-  width: 16px; /* 아이콘의 너비 설정 */
-  height: 16px; /* 아이콘의 높이 설정 */
+  width: 5px; /* 아이콘의 너비 설정 */
+  height: 5px; /* 아이콘의 높이 설정 */
   background-image: url('img/money.png'); /* PNG 아이콘의 경로 설정 */
-  background-size: cover; /* 배경 이미지를 아이콘에 맞게 조절 */
 }
