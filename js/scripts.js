@@ -177,6 +177,19 @@ function copyLink(){
 	alert("링크가 복사되었습니다. 널리널리 퍼뜨려주세요💕")
 }
 
+// 링크 복사
+function jaeyunAccountNumber(){
+	var url = '3333029239052 카카오뱅크';
+	var textarea = document.createElement("textarea");
+	document.body.appendChild(textarea);
+	url = window.document.location.href;
+	textarea.value = url;
+	textarea.select();
+	document.execCommand("copy");
+	document.body.removeChild(textarea);
+	alert("이재윤의 계좌번호가 복사되었습니다.")
+}
+
 // 페이지가 로드될 때 D-N Day 표시
 window.onload = function() {
     displayDday();
