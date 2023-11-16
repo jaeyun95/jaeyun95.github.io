@@ -176,7 +176,7 @@ function copyLink(){
 	alert("링크가 복사되었습니다. 널리널리 퍼뜨려주세요💕")
 }
 
-// 링크 복사
+// 재윤 계좌번호 복사
 function jaeyunAccountNumber(){
 	var jaeyun_account = '3333029239052 카카오뱅크';
 	var textarea = document.createElement("textarea");
@@ -186,6 +186,18 @@ function jaeyunAccountNumber(){
 	document.execCommand("copy");
 	document.body.removeChild(textarea);
 	alert("이재윤의 계좌번호가 복사되었습니다.")
+}
+
+// 영석 계좌번호 복사
+function yeongseokAccountNumber(){
+	var yeongseok_account = '3333029239052 카카오뱅크';
+	var textarea = document.createElement("textarea");
+	document.body.appendChild(textarea);
+	textarea.value = yeongseok_account;
+	textarea.select();
+	document.execCommand("copy");
+	document.body.removeChild(textarea);
+	alert("최영석의 계좌번호가 복사되었습니다.")
 }
 
 // 카카오톡 공유하기
