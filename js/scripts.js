@@ -177,7 +177,6 @@ function copyLink(){
 	alert("링크가 복사되었습니다. 널리널리 퍼뜨려주세요💕")
 }
 
-
 // 페이지가 로드될 때 D-N Day 표시
 window.onload = function() {
     displayDday();
