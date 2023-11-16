@@ -190,6 +190,37 @@ function jaeyunAccountNumber(){
 	alert("이재윤의 계좌번호가 복사되었습니다.")
 }
 
+// 카카오톡 공유하기
+function kakaoShare() {
+    Kakao.init('6324846770cc3fff60e3982d062392ac');
+
+    // SDK 초기화 여부를 판단합니다.
+    console.log(Kakao.isInitialized());
+    Kakao.Link.sendDefault({
+        objectType: 'feed',
+        content: {
+        title: '재윤🤍영석',
+        description: '2024.03.01 재윤🤍영석 결혼합니다.',
+        imageUrl: 'assets/img/url-main.jpg',
+        link: {
+            mobileWebUrl: 'https://jy-luv-ys.com/#!',
+            webUrl: 'https://jy-luv-ys.com/#!',
+        },
+        },
+        buttons: [
+        {
+            title: '웹으로 보기',
+            link: {
+            mobileWebUrl: 'https://jy-luv-ys.com/#!',
+            webUrl: 'https://jy-luv-ys.com/#!',
+            },
+        },
+        ],
+        // 카카오톡 미설치 시 카카오톡 설치 경로이동
+        installTalk: true,
+    })
+}
+
 // 페이지가 로드될 때 D-N Day 표시
 window.onload = function() {
     displayDday();
