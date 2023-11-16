@@ -3,6 +3,8 @@
 * Copyright 2013-2023 Start Bootstrap
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-stylish-portfolio/blob/master/LICENSE)
 */
+
+/*
 window.addEventListener('DOMContentLoaded', event => {
 
     const sidebarWrapper = document.getElementById('sidebar-wrapper');
@@ -55,7 +57,7 @@ window.addEventListener('DOMContentLoaded', event => {
         }
     })
 })
-
+*/
 function fadeOut(el) {
     el.style.opacity = 1;
     (function fade() {
