@@ -110,26 +110,6 @@ function displayDday() {
 
 // 카카오 맵 가져오기
 function getKakaoMap() {
-    Kakao.init('6324846770cc3fff60e3982d062392ac');
-
-    Kakao.Local.searchAddress('빌라드지디 청담', function(result, status) {
-        if (status === kakao.maps.services.Status.OK) {
-            const coords = new kakao.maps.LatLng(result[0].y, result[0].x);
-            const container = document.getElementById('map');
-            const options = {
-                center: coords,
-                level: 3
-            };
-            const map = new kakao.maps.Map(container, options);
-            const marker = new kakao.maps.Marker({
-                position: coords,
-                map: map
-            });
-        }
-    });
-}
-
-function getKakaoMap2() {
     
     const mapContainer = document.getElementById('map');
     const mapOption = {
@@ -204,7 +184,7 @@ window.onload = function() {
 
     // 매 초마다 갱신되도록 설정
     setInterval(displayDday, 1000);
-    getKakaoMap2();
+    getKakaoMap();
     //getKakaoMap();
 };
 
