@@ -108,7 +108,7 @@ function displayDday() {
     if (daysLeft === 0) {
         countdownElement.innerHTML = "D-Day";
     } else if (daysLeft > 0) {
-        countdownElement.innerHTML = `D-${daysLeft}`;
+        countdownElement.innerHTML = "D-${daysLeft}";
     } else {
         countdownElement.innerHTML = "D+${daysLeft}";
     }
