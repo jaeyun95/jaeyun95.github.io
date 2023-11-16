@@ -94,6 +94,9 @@ function calculateDday() {
     const daysLeft = Math.ceil(difference / (1000 * 60 * 60 * 24));
     console.log(`D-Day까지 ${daysLeft}일 남았습니다.`);
     console.log(`오늘 날짜는 ${now}입니다.`);
+
+    const userLanguage = navigator.language;
+    console.log('사용자 언어:', userLanguage);
     return daysLeft;
 }
 
