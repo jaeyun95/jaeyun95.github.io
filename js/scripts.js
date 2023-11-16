@@ -206,29 +206,12 @@ function kakaoShare() {
 
     // SDK 초기화 여부를 판단합니다.
     console.log(Kakao.isInitialized());
-    Kakao.Link.sendDefault({
-        objectType: 'feed',
-        content: {
-        title: '재윤🤍영석',
-        description: '2024.03.01 재윤🤍영석 결혼합니다.',
-        imageUrl: 'https://github.com/jaeyun95/jaeyun95.github.io/blob/main/assets/img/url-main.jpg?raw=true',
-        link: {
-            mobileWebUrl: 'https://jy-luv-ys.com/#!',
-            webUrl: 'https://jy-luv-ys.com/#!',
-        },
-        },
-        buttons: [
-        {
-            title: '웹으로 보기',
-            link: {
-            mobileWebUrl: 'https://jy-luv-ys.com/#!',
-            webUrl: 'https://jy-luv-ys.com/#!',
-            },
-        },
-        ],
-        // 카카오톡 미설치 시 카카오톡 설치 경로이동
-        installTalk: true,
-    })
+    
+    Kakao.Link.sendScrap({
+        requestUrl: 'https://jy-luv-ys.com', // 페이지 url
+        templateId: 100858 // 메시지템플릿 번호
+      });
+    
 }
 
 // 페이지가 로드될 때 D-N Day 표시
