@@ -179,11 +179,11 @@ function copyLink(){
 
 // 링크 복사
 function jaeyunAccountNumber(){
-	var url = '3333029239052 카카오뱅크';
+	var jaeyun_account = '3333029239052 카카오뱅크';
 	var textarea = document.createElement("textarea");
 	document.body.appendChild(textarea);
-	url = window.document.location.href;
-	textarea.value = url;
+	jaeyun_account = window.document.location.href;
+	textarea.value = jaeyun_account;
 	textarea.select();
 	document.execCommand("copy");
 	document.body.removeChild(textarea);
