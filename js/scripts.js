@@ -185,23 +185,17 @@ function getKakaoMap2() {
 }
 
 // 링크 복사
-document.getElementById("copyLink").addEventListener("click", function(event) {
-    event.preventDefault(); // Prevent the default behavior of the anchor tag
-
-    // 복사할 텍스트를 선택합니다.
-    const textToCopy = "https://jy-luv-ys.com";
-
-    // 텍스트를 클립보드에 복사합니다.
-    const textarea = document.createElement("textarea");
-    textarea.value = textToCopy;
-    document.body.appendChild(textarea);
-    textarea.select();
-    document.execCommand("copy");
-    document.body.removeChild(textarea);
-
-    // 복사되었다는 알림을 표시합니다.
-    alert("링크가 복사되었습니다. 널리널리 퍼뜨려주세요.💕");
-});
+function copyLink(){
+	var url = 'https://jy-luv-ys.com';
+	var textarea = document.createElement("textarea");
+	document.body.appendChild(textarea);
+	url = window.document.location.href;
+	textarea.value = url;
+	textarea.select();
+	document.execCommand("copy");
+	document.body.removeChild(textarea);
+	alert("링크가 복사되었습니다. 널리널리 퍼뜨려주세요💕")
+}
 
 
 // 페이지가 로드될 때 D-N Day 표시
