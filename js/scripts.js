@@ -92,7 +92,7 @@ function calculateDday() {
 
     // 시간 차이를 일 단위로 변환
     const daysLeft = Math.ceil(difference / (1000 * 60 * 60 * 24));
-
+    console.log(`D-Day까지 ${daysLeft}일 남았습니다.`);
     return daysLeft;
 }
 
