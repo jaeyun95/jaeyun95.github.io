@@ -199,7 +199,7 @@ function kakaoShare() {
         content: {
         title: '재윤🤍영석',
         description: '2024.03.01 재윤🤍영석 결혼합니다.',
-        imageUrl: 'assets/img/url-main.jpg',
+        imageUrl: '../assets/img/url-main.jpg',
         link: {
             mobileWebUrl: 'https://jy-luv-ys.com/#!',
             webUrl: 'https://jy-luv-ys.com/#!',
