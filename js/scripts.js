@@ -91,9 +91,7 @@ function calculateDday() {
     const difference = dDay.getTime() - now.getTime();
 
     // 시간 차이를 일 단위로 변환
-    const daysLeft = Math.ceil(difference / (1000 * 60 * 60 * 24));
-    console.log(`D-Day까지 ${dDay.getTime()}일 남았습니다.`);
-    console.log(`오늘 날짜는 ${now.getTime()}입니다.`);
+    const daysLeft = Math.floor(difference / (1000 * 60 * 60 * 24));
 
     return daysLeft;
 }
@@ -106,9 +104,9 @@ function displayDday() {
     if (daysLeft === 0) {
         countdownElement.innerHTML = "D-Day";
     } else if (daysLeft > 0) {
-        countdownElement.innerHTML = "D-${daysLeft}";
+        countdownElement.innerHTML = `D-${daysLeft}`;
     } else {
-        countdownElement.innerHTML = "D+${daysLeft}";
+        countdownElement.innerHTML = `D+${daysLeft}`;
     }
 }
 
