@@ -169,7 +169,6 @@ function copyLink(){
 	var url = 'https://jy-luv-ys.com';
 	var textarea = document.createElement("textarea");
 	document.body.appendChild(textarea);
-	url = window.document.location.href;
 	textarea.value = url;
 	textarea.select();
 	document.execCommand("copy");
@@ -182,7 +181,6 @@ function jaeyunAccountNumber(){
 	var jaeyun_account = '3333029239052 카카오뱅크';
 	var textarea = document.createElement("textarea");
 	document.body.appendChild(textarea);
-	jaeyun_account = window.document.location.href;
 	textarea.value = jaeyun_account;
 	textarea.select();
 	document.execCommand("copy");
