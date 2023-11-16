@@ -184,6 +184,23 @@ function getKakaoMap2() {
         yAnchor: 1 });
 }
 
+//링크 복사
+document.getElementById("copyLink").addEventListener("click", function() {
+    // 복사할 텍스트를 선택합니다.
+    const textToCopy = "https://jy-luv-ys.com";
+
+    // 텍스트를 클립보드에 복사합니다.
+    const textarea = document.createElement("textarea");
+    textarea.value = textToCopy;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand("copy");
+    document.body.removeChild(textarea);
+
+    // 복사되었다는 알림을 표시합니다.
+    alert("링크가 복사되었습니다. 널리널리 퍼뜨려주세요.💕");
+});
+
 // 페이지가 로드될 때 D-N Day 표시
 window.onload = function() {
     displayDday();
@@ -193,3 +210,4 @@ window.onload = function() {
     getKakaoMap2();
     //getKakaoMap();
 };
+
