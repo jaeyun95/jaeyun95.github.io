@@ -222,36 +222,6 @@ function kakaoShare() {
         installTalk: true,
     })
 }
-
-// img load
-function createImages(numImages, imageUrl, containerName) {
-        // 결과를 출력할 컨테이너
-        const imagesContainer = document.getElementById(containerName);
-
-        // 반복문을 사용하여 동적으로 HTML 생성 및 삽입
-        for (let i = 1; i <= numImages; i++) {
-            // 부모 div 엘리먼트 생성
-            const parentDiv = document.createElement('div');
-            parentDiv.className = 'col-12 col-md-6 col-lg-3';
-
-            // 이미지를 출력하는 img 태그 생성
-            const img = document.createElement('img');
-            img.src = driveUrl + imageUrl + i + '.jpeg'; // 이미지 개수만큼 URL에 인덱스를 추가
-            img.alt = `Image ${i}`;
-
-            // img 태그에 data 속성 추가
-            img.setAttribute('data-target', '#indicators');
-            img.setAttribute('data-slide-to', String(i - 1)); // 인덱스를 0부터 시작하도록 조정
-
-            // 생성된 이미지를 부모 div에 추가
-            parentDiv.appendChild(img);
-
-            // 부모 div를 컨테이너에 추가
-            imagesContainer.appendChild(parentDiv);
-        }
-    }
-
-    // 함수 호출 예시: 이미지 개수와 이미지 URL을 인자로 전달
     
 
 // 페이지가 로드될 때 D-N Day 표시
@@ -261,6 +231,5 @@ window.onload = function() {
     // 매 초마다 갱신되도록 설정
     setInterval(displayDday, 1000);
     getKakaoMap();
-    createImages(27, 'https://drive.google.com/drive/folders/1JNUobkBMJsYA7ykuU13_XrK92Pr2jbAs', 'images-container');
 };
 
