@@ -135,16 +135,6 @@ function getKakaoMap() {
     image: markerImage // 마커이미지 설정 
     });
 
-
-
-
-    // const markerPosition = new kakao.maps.LatLng(37.52020441860761, 127.05544016257608);
-
-    // 마커 표시
-    // const marker = new kakao.maps.Marker({
-    //     position: markerPosition
-    // });
-
     // 마커 지도에 추가
     marker.setMap(map);
 
@@ -221,7 +211,7 @@ function kakaoShare() {
         },
         buttons: [
         {
-            title: '웹으로 보기',
+            title: '모바일 청첩장 보기',
             link: {
             mobileWebUrl: 'https://jy-luv-ys.com/#!',
             webUrl: 'https://jy-luv-ys.com/#!',
