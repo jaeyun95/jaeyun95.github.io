@@ -224,9 +224,9 @@ function kakaoShare() {
 }
 
 // img load
-function createImages(numImages, imageUrl) {
+function createImages(numImages, imageUrl, containerName) {
         // 결과를 출력할 컨테이너
-        const imagesContainer = document.getElementById('images-container');
+        const imagesContainer = document.getElementById(containerName);
 
         // 반복문을 사용하여 동적으로 HTML 생성 및 삽입
         for (let i = 1; i <= numImages; i++) {
@@ -261,6 +261,6 @@ window.onload = function() {
     // 매 초마다 갱신되도록 설정
     setInterval(displayDday, 1000);
     getKakaoMap();
-    createImages(27, 'https://drive.google.com/drive/folders/1JNUobkBMJsYA7ykuU13_XrK92Pr2jbAs');
+    createImages(27, 'https://drive.google.com/drive/folders/1JNUobkBMJsYA7ykuU13_XrK92Pr2jbAs', 'images-container');
 };
 
