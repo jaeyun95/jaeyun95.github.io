@@ -91,7 +91,7 @@ function calculateDday() {
     const difference = dDay.getTime() - now.getTime();
 
     // 시간 차이를 일 단위로 변환
-    const daysLeft = Math.floor(difference / (1000 * 60 * 60 * 24));
+    const daysLeft = Math.ceil(difference / (1000 * 60 * 60 * 24));
 
     return daysLeft;
 }
