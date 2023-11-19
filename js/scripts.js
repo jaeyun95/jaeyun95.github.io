@@ -224,7 +224,7 @@ function kakaoShare() {
 }
 
 // 이미지 출력하기
-function createJejuImages(numImages, containerName, folderName) {
+function createJejuImages(numImages, containerName, folderName, format) {
         // 결과를 출력할 컨테이너
         const imagesContainer = document.getElementById(containerName);
 
@@ -236,7 +236,7 @@ function createJejuImages(numImages, containerName, folderName) {
 
             // 이미지를 출력하는 img 태그 생성
             const img = document.createElement('img');
-            img.src = `../assets/img/${folderName}/${i}.png`; // 이미지 파일의 경로
+            img.src = `../assets/img/${folderName}/${i}.${format}`; // 이미지 파일의 경로
             img.alt = `Jeju Image ${i}`;
 
             // 생성된 이미지를 부모 div에 추가
@@ -254,6 +254,6 @@ window.onload = function() {
     // 매 초마다 갱신되도록 설정
     setInterval(displayDday, 1000);
     getKakaoMap();
-    createJejuImages(27,'jeju-container','jeju');
+    createJejuImages(27,'jeju-container','jeju','jpg');
 };
 
