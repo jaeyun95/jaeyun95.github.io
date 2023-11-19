@@ -236,7 +236,7 @@ function createJejuImages(numImages, containerName, folderName) {
 
             // 이미지를 출력하는 img 태그 생성
             const img = document.createElement('img');
-            img.src = `assets/img/${folderName}/${i}.png`; // 이미지 파일의 경로
+            img.src = `../assets/img/${folderName}/${i}.png`; // 이미지 파일의 경로
             img.alt = `Jeju Image ${i}`;
 
             // 생성된 이미지를 부모 div에 추가
