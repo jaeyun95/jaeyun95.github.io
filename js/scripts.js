@@ -224,9 +224,9 @@ function kakaoShare() {
 }
 
 // 이미지 출력하기
-function createJejuImages(numImages, containerName, folderName, format) {
+function createJejuImages(numImages, folderName, format) {
         // 결과를 출력할 컨테이너
-        const imagesContainer = document.getElementById(containerName);
+        const imagesContainer = document.getElementById('jeju-container');
 
         // 반복문을 사용하여 동적으로 HTML 생성 및 삽입
         for (let i = 1; i <= numImages; i++) {
@@ -254,6 +254,6 @@ window.onload = function() {
     // 매 초마다 갱신되도록 설정
     setInterval(displayDday, 1000);
     getKakaoMap();
-    createJejuImages(27,'jeju-container','jeju','jpg');
+    createJejuImages(27,'jeju','jpg');
 };
 
