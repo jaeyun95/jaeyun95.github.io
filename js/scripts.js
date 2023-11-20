@@ -182,7 +182,7 @@ function jaeyunAccountNumber(){
 
 // 영석 계좌번호 복사
 function yeongseokAccountNumber(){
-	var yeongseok_account = '3333029239052 카카오뱅크';
+	var yeongseok_account = '3333075790843 카카오뱅크';
 	var textarea = document.createElement("textarea");
 	document.body.appendChild(textarea);
 	textarea.value = yeongseok_account;
