@@ -223,30 +223,6 @@ function kakaoShare() {
     })
 }
 
-// 이미지 출력하기
-function createJejuImages(numImages, folderName, format) {
-        // 결과를 출력할 컨테이너
-        const imagesContainer = document.getElementById('jeju-container');
-
-        // 반복문을 사용하여 동적으로 HTML 생성 및 삽입
-        for (let i = 1; i <= numImages; i++) {
-            // 부모 div 엘리먼트 생성
-            const parentDiv = document.createElement('div');
-            parentDiv.className = 'col-12 col-md-6 col-lg-3';
-
-            // 이미지를 출력하는 img 태그 생성
-            const img = document.createElement('img');
-            img.src = `../assets/img/${folderName}/${i}.${format}`; // 이미지 파일의 경로
-            img.alt = `Jeju Image ${i}`;
-
-            // 생성된 이미지를 부모 div에 추가
-            parentDiv.appendChild(img);
-
-            // 부모 div를 컨테이너에 추가
-            imagesContainer.appendChild(parentDiv);
-        }
-    }
-
 // 페이지가 로드될 때 D-N Day 표시
 window.onload = function() {
     displayDday();
@@ -254,6 +230,5 @@ window.onload = function() {
     // 매 초마다 갱신되도록 설정
     setInterval(displayDday, 1000);
     getKakaoMap();
-    createJejuImages(27,'jeju','jpg');
 };
 
