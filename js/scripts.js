@@ -178,7 +178,7 @@ function jaeyunAccountNumber(){
 	textarea.select();
 	document.execCommand("copy");
 	document.body.removeChild(textarea);
-	alert("이재윤의 계좌번호가 복사되었습니다.<br>3333029239052 카카오뱅크")
+	alert("이재윤의 계좌번호가 복사되었습니다.\n3333029239052 카카오뱅크")
 }
 
 // 영석 계좌번호 복사
@@ -190,7 +190,7 @@ function yeongseokAccountNumber(){
 	textarea.select();
 	document.execCommand("copy");
 	document.body.removeChild(textarea);
-	alert("최영석의 계좌번호가 복사되었습니다.<br>3333075790843 카카오뱅크")
+	alert("최영석의 계좌번호가 복사되었습니다.\n3333075790843 카카오뱅크")
 }
 
 // 카카오톡 공유하기
