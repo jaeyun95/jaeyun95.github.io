@@ -10955,7 +10955,7 @@ html {
 }
 
 .btn-xl {
-  padding: 1.25rem 2.5rem;
+  padding: 0.5rem 0.2rem;/*1.25rem 2.5rem;*/
 }
 
 .callout {
