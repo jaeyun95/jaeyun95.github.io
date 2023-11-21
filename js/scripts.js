@@ -116,7 +116,8 @@ function getKakaoMap() {
     const mapContainer = document.getElementById('map');
     const mapOption = {
         center: new kakao.maps.LatLng(37.52020441860761, 127.05544016257608), // '빌라드지디 청담'의 위도, 경도
-        level: 4 // 지도 확대 레벨
+        level: 4, // 지도 확대 레벨
+        draggable: false
     };
 
     const map = new kakao.maps.Map(mapContainer, mapOption);
@@ -193,8 +194,8 @@ function yeongseokAccountNumber(){
 }
 
 // 카카오톡 공유하기
+Kakao.init('6324846770cc3fff60e3982d062392ac');
 function kakaoShare() {
-    Kakao.init('6324846770cc3fff60e3982d062392ac');
 
     // SDK 초기화 여부를 판단합니다.
     console.log(Kakao.isInitialized());
