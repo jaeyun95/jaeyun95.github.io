@@ -101,10 +101,10 @@ function displayDday() {
     const daysLeft = calculateDday();
     const countdownElement = document.getElementById('countdown');
 
-    if (daysLeft === 0) {
-        countdownElement.innerHTML = "D-Day";
-    } else if (daysLeft > 0) {
+    if (daysLeft > 0) {
         countdownElement.innerHTML = `D-${daysLeft}`;
+    } else if (daysLeft === 0) {
+        countdownElement.innerHTML = "D-Day";
     } else {
         countdownElement.innerHTML = `D+${daysLeft}`;
     }
@@ -226,7 +226,7 @@ function kakaoShare() {
 // 페이지가 로드될 때 D-N Day 표시
 window.onload = function() {
     Kakao.init('6324846770cc3fff60e3982d062392ac');
-    
+
     displayDday();
     
     // 매 초마다 갱신되도록 설정
