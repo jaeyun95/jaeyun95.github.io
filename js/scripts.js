@@ -81,7 +81,7 @@ function fadeIn(el, display) {
     })();
 };
 
-
+/*
 // D-Day 설정 (년, 월(0부터 시작), 일)
 const dDay = new Date('2024-03-01');
 
@@ -109,7 +109,7 @@ function displayDday() {
         countdownElement.innerHTML = `D+${daysLeft}`;
     }
 }
-
+*/
 // 카카오 맵 가져오기
 function getKakaoMap() {
     
@@ -227,10 +227,10 @@ function kakaoShare() {
 window.onload = function() {
     Kakao.init('6324846770cc3fff60e3982d062392ac');
 
-    displayDday();
+    // displayDday();
     
     // 매 초마다 갱신되도록 설정
-    setInterval(displayDday, 1000);
+    // setInterval(displayDday, 1000);
     getKakaoMap();
 };
 
