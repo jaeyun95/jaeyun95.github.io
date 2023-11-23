@@ -11124,3 +11124,12 @@ footer.footer {
   margin-bottom: 1rem;
   width: 100%;
 }
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-text {
+  display: block;
+  margin-top: 0.25rem;
+}
