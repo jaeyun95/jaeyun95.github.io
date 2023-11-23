@@ -195,7 +195,7 @@ function yeongseokAccountNumber(){
 
 // 카카오톡 공유하기
 function kakaoShare() {
-
+    Kakao.init('6324846770cc3fff60e3982d062392ac');
     // SDK 초기화 여부를 판단합니다.
     console.log(Kakao.isInitialized());
     Kakao.Link.sendDefault({
@@ -225,12 +225,11 @@ function kakaoShare() {
 
 // 페이지가 로드될 때 D-N Day 표시
 window.onload = function() {
-    Kakao.init('6324846770cc3fff60e3982d062392ac');
 
     // displayDday();
     
     // 매 초마다 갱신되도록 설정
     // setInterval(displayDday, 1000);
-    getKakaoMap();
+    //getKakaoMap();
 };
 
