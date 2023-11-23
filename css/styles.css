@@ -11133,3 +11133,10 @@ footer.footer {
   display: block;
   margin-top: 0.25rem;
 }
+
+.map-icon {
+  width: 48px;
+  height: auto;
+  margin-left: 5px;
+  margin-right: 5px;
+}
