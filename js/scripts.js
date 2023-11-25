@@ -197,7 +197,7 @@ function yeongseokAccountNumber(){
 function kakaoShare() {
     Kakao.init('6324846770cc3fff60e3982d062392ac');
     // SDK 초기화 여부를 판단합니다.
-    Kakao.isInitialized()
+    Kakao.isInitialized();
     //console.log(Kakao.isInitialized());
     Kakao.Link.sendDefault({
         objectType: 'feed',
