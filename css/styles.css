@@ -11140,3 +11140,8 @@ footer.footer {
   margin-left: 5px;
   margin-right: 5px;
 }
+
+a.no-style {
+  text-decoration: none; /* 밑줄 제거 */
+  color: inherit; /* 기본 색상으로 설정 */
+}
