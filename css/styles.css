@@ -11154,5 +11154,10 @@ a.no-style {
 /* 토글 버튼 스타일 */
 .toggle-button {
   cursor: pointer;
-  color: white;
+  color: white; /* 글씨색을 흰색으로 변경 */
+  text-decoration: none; /* 밑줄 제거 */
+  border: none; /* 버튼 스타일의 테두리 제거 */
+  background: none; /* 배경 스타일 제거 */
+  padding: 0; /* 내부 여백 제거 */
+  font-size: 16px; /* 원하는 글꼴 크기로 조절 */
 }
