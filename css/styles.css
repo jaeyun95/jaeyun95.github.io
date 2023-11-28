@@ -11161,3 +11161,15 @@ a.no-style {
   padding: 0; /* 내부 여백 제거 */
   font-size: 16px; /* 원하는 글꼴 크기로 조절 */
 }
+
+.social-link-honju {
+  display: block;
+  text-decoration: none;
+  height: 2rem;
+  width: 2rem;
+  line-height: 4.3rem;
+  font-size: 1.5rem;
+  background-color: #23252A;
+  transition: background-color 0.15s ease-in-out;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
