@@ -11154,6 +11154,5 @@ a.no-style {
 /* 토글 버튼 스타일 */
 .toggle-button {
   cursor: pointer;
-  color: blue;
-  text-decoration: underline;
+  color: white;
 }
