@@ -11151,6 +11151,11 @@ a.no-style {
   display: none;
 }
 
+/* 초기에 숨겨진 상태 */
+.foldable-content2 {
+  display: none;
+}
+
 /* 토글 버튼 스타일 */
 .toggle-button {
   cursor: pointer;

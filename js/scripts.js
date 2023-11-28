@@ -241,8 +241,8 @@ function toggleFoldable() {
 }
 
 function toggleFoldable2() {
-    var content = document.querySelector('.foldable-content');
-    var toggleIcon = document.getElementById('toggleIcon');
+    var content = document.querySelector('.foldable-content2');
+    var toggleIcon = document.getElementById('toggleIcon2');
 
     // 펼치기/접기 상태 변경
     if (content.style.display === 'none') {
