@@ -272,6 +272,21 @@ function toggleFoldable3() {
     }
 }
 
+function toggleFoldable4() {
+    var content = document.querySelector('.foldable-content4');
+    var toggleIcon = document.getElementById('toggleIcon4');
+
+    // 펼치기/접기 상태 변경
+    if (content.style.display === 'none') {
+        content.style.display = 'block';
+        toggleIcon.innerText = '▲';
+        // 추가로 펼쳐진 상태에서 수행할 동작 추가 가능
+    } else {
+        content.style.display = 'none';
+        toggleIcon.innerText = '▼';
+        // 추가로 접힌 상태에서 수행할 동작 추가 가능
+    }
+}
 // 페이지가 로드될 때 D-N Day 표시
 window.onload = function() {
 
