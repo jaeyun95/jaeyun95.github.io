@@ -203,7 +203,7 @@ function kakaoShare() {
         objectType: 'feed',
         content: {
         title: '재윤🤍영석',
-        description: '2024.03.01 재윤🤍영석 결혼합니다.',
+        description: '재윤🤍영석 결혼합니다.\n2024.03.01\n11시 30분 빌라드지디 청담',
         imageUrl: 'https://github.com/jaeyun95/jaeyun95.github.io/blob/main/assets/img/main.jpg?raw=true',
         link: {
             mobileWebUrl: 'https://jy-luv-ys.com/#!',
