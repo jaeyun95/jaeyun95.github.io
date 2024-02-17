@@ -193,6 +193,19 @@ function yeongseokAccountNumber(){
 	alert("최영석의 계좌번호가 복사되었습니다.\n3333075790843 카카오뱅크")
 }
 
+// 아버님 계좌번호 복사 
+function yeongseoksFatherAccountNumber(){
+    var yeongseoks_father_account = '3333075790843 국민은행';
+	var textarea = document.createElement("textarea");
+	document.body.appendChild(textarea);
+	textarea.value = yeongseoks_father_account;
+	textarea.select();
+	document.execCommand("copy");
+	document.body.removeChild(textarea);
+	alert("계좌번호가 복사되었습니다.\n3333075790843 국민은행")
+}
+
+
 // 카카오톡 공유하기
 function kakaoShare() {
     Kakao.init('6324846770cc3fff60e3982d062392ac');
