@@ -195,14 +195,14 @@ function yeongseokAccountNumber(){
 
 // 아버님 계좌번호 복사 
 function yeongseoksFatherAccountNumber(){
-    var yeongseoks_father_account = '3333075790843 국민은행';
+    var yeongseoks_father_account = '255010247051 국민은행';
 	var textarea = document.createElement("textarea");
 	document.body.appendChild(textarea);
 	textarea.value = yeongseoks_father_account;
 	textarea.select();
 	document.execCommand("copy");
 	document.body.removeChild(textarea);
-	alert("계좌번호가 복사되었습니다.\n3333075790843 국민은행")
+	alert("계좌번호가 복사되었습니다.\n255010247051 국민은행")
 }
 
 
